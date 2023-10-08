@@ -38,9 +38,10 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+  /* --brand-color: #1c8819; */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -71,7 +72,7 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -86,6 +87,11 @@ body {
 }
 
 body {
+  /* min-height: 100vh; */
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -104,4 +110,23 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.container {
+  max-width: 1440px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
 }

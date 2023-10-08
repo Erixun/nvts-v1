@@ -8,13 +8,30 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>NVTS</div>
-      <nav style={{ display: 'flex', gap: 20 }}>
-        {/* <Link href="/">Home</Link>
-        <Link href="/foo">Foo</Link> */}
+      <nav
+        style={{
+          display: 'flex',
+          gap: 20,
+          marginLeft: 'auto',
+          marginRight: 25,
+        }}
+      >
         {pageLinks.map((pageLink) => (
           <NavItem key={pageLink.slug} {...pageLink} />
         ))}
       </nav>
+      <button
+        style={{
+          paddingInline: 20,
+          paddingBlock: 10,
+          borderRadius: 25,
+          backgroundColor: '#156a13',
+          fontSize: 14,
+          border: 'none',
+        }}
+      >
+        Contact
+      </button>
     </header>
   );
 }
@@ -26,7 +43,7 @@ const NavItem = ({ name, slug, description }: PageLink) => {
   return (
     <Link
       href={`/${slug ?? ''}`}
-      style={isActive ? { textDecoration: 'underline', color: 'red' } : {}}
+      // style={isActive ? { textDecoration: 'underline', color: 'red' } : {}}
     >
       {name}
     </Link>

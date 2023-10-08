@@ -2,14 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px;
   /* background-color: #fff; */
-  border-bottom: 1px solid #eaeaea;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid #eaeaea; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .logo {
-  color: rgb(175, 28, 28);
+  /* color: rgb(175, 28, 28); */
+  color: var(--brand-color);
   font-weight: bold;
   font-size: 24px;
   font-style: italic;
