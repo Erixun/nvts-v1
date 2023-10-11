@@ -50,7 +50,9 @@ export default function Home() {
                 Exercitationem doloremque officiis quas nostrum, amet sint minus
                 quam doloribus unde excepturi.
               </p>
-              <div style={{marginTop: 10, textAlign: "right"}}>Read more -&gt;</div>
+              <div style={{ marginTop: 10, textAlign: 'right' }}>
+                Read more -&gt;
+              </div>
             </div>
           </div>
           <div className="card" style={{ width: 200 }}>
