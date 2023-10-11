@@ -8,25 +8,21 @@ import Image from 'next/image';
 export default function Header() {
   return (
     <header className={styles.header}>
-    
       <Image src="/logo_wide.svg" width={320} height={80} alt={'nvts logo'} />
-      <nav
-        style={{
-          display: 'flex',
-          gap: 20,
-          marginLeft: 'auto',
-          marginRight: 25,
-        }}
-      >
-        {pageLinks.map((pageLink) => (
-          <NavItem key={pageLink.slug} {...pageLink} />
-        ))}
-      </nav>
-      <button
-        className={styles.button}
-      >
-        Contact us
-      </button>
+      <section style={{ display: 'flex', marginLeft: 'auto' }}>
+        <nav
+          style={{
+            display: 'flex',
+            gap: 20,
+            marginRight: 25,
+          }}
+        >
+          {pageLinks.map((pageLink) => (
+            <NavItem key={pageLink.slug} {...pageLink} />
+          ))}
+        </nav>
+        <button className={styles.button}>Contact us</button>
+      </section>
     </header>
   );
 }
