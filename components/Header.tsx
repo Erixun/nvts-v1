@@ -3,11 +3,13 @@
 import { useSelectedLayoutSegment } from 'next/navigation';
 import styles from './Header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>NVTS</div>
+    
+      <Image src="/logo_wide.svg" width={320} height={80} alt={'nvts logo'} />
       <nav
         style={{
           display: 'flex',
@@ -21,16 +23,9 @@ export default function Header() {
         ))}
       </nav>
       <button
-        style={{
-          paddingInline: 20,
-          paddingBlock: 10,
-          borderRadius: 25,
-          backgroundColor: '#156a13',
-          fontSize: 14,
-          border: 'none',
-        }}
+        className={styles.button}
       >
-        Contact
+        Contact us
       </button>
     </header>
   );
