@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.footer_secondary}>
-        <address style={{ textAlign: 'center' }}>
+        <address style={{ textAlign: 'center', fontSize: 14 }}>
           Nordic Vertitech Solutions AB, Kungsgatan 8, 111 43 Stockholm, Sweden
         </address>
       </div>
