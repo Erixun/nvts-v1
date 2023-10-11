@@ -1,21 +1,12 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* background-color: #fff; */
-  /* border-bottom: 1px solid #eaeaea; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
-.logo {
-  /* color: rgb(175, 28, 28); */
-  color: var(--brand-color);
-  font-weight: bold;
-  font-size: 24px;
-  font-style: italic;
-  font-family: serif;
-}
 
 .header a {
   /* color: #0070f3; */
@@ -30,4 +21,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.button {
+  background-color: var(--nvts-green);
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 25px;
+  font-size: 14px;
+  border: none;
 }
