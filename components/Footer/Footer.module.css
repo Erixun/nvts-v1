@@ -1,13 +1,11 @@
 .footer {
-  /* text-align: center; */
   width: 100%;
   --footer-padding: 20px;
 }
 
 .footer_primary {
   padding: var(--footer-padding);
-  /* background-color: #1c8819; */
-  background-color: #156a13;
+  background-color: var(--nvts-green);
   color: #fff;
   gap: 30px;
   width: 100vw;
