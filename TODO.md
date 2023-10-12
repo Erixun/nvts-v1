@@ -1,7 +1,7 @@
 
 ### Homepage:
 
-- A clear and engaging company logo.
+- ~~A clear and engaging company logo.~~
 - A brief and compelling tagline or mission statement.
 - An attractive header image or banner related to your business.
 - Navigation menu with links to key pages.
