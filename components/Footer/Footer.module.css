@@ -5,8 +5,8 @@
 
 .footer_primary {
   padding: var(--footer-padding);
-  background-color: var(--nvts-green);
-  color: #fff;
+  background-color: var(--indigo-3);
+  color: var(--indigo-3-contrast);
   gap: 30px;
   width: 100vw;
   position: relative;

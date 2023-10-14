@@ -5,15 +5,22 @@ export default function Home() {
     <main className={styles.main} style={{ gap: 60 }}>
       <div
         className="intro"
-        style={{ textAlign: 'center', maxInlineSize: 500 }}
+        style={{ textAlign: 'center', maxInlineSize: 500, display: 'grid', gap: 15 }}
       >
         <h1>Welcome</h1>
-        <p style={{ textAlign: 'center', padding: 10 }}>
-          This is the home of Nordic Vertitech Solutions.
+        <p style={{ textAlign: 'center'}}>
+          This is the home of <em>Nordic Vertitech Solutions</em>.
         </p>
         <p>
           We provide services and installation of elevators, escalators and
           other vertical transportation systems.
+        </p>
+        <p>
+          {/* Write a brief and compelling tagline or mission statement: */}
+          <strong>
+            Our mission is to provide the best service possible for all your
+            vertical transportation needs.
+          </strong>
         </p>
       </div>
       <div className="content">
