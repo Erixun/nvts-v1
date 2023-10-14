@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Theme } from '@radix-ui/themes';
+import { ButtonScrollUp, Footer, Header } from '@/components';
 import '@radix-ui/themes/styles.css';
 import './globals.css';
-import { ButtonScrollUp, Footer, Header } from '@/components';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} id="body">
         <Theme accentColor="indigo" radius="full">
           <div className="container">
             <Header />

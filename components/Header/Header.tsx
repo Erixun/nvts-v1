@@ -45,12 +45,13 @@ export function Header() {
           gap: 20,
         }}
       >
-        <Image src="/logo_wide.svg" width={280} height={80} alt={'nvts logo'} />
+        <Image src="/logo_wide.svg" priority width={280} height={80} alt={'nvts logo'} />
       </div>
+      <div className="spacer" style={{flex: 3}}></div>
       <section
         style={{
           display: 'flex',
-          flex: 3,
+          // flex: 3,
           marginLeft: 'auto',
           justifyContent: 'flex-end',
           alignItems: 'center',

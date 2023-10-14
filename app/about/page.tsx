@@ -4,12 +4,14 @@ export default function about() {
   return (
     <main style={{ flex: 1, padding: '6rem' }}>
       <h1>About us</h1>
-      <p>
-        Get started by editing <code>app/foo/page.tsx</code>
-      </p>
-      <Link href="/">
-        <span>&lt;-</span> Home
-      </Link>
+      <div className="presentation">
+        <p>
+          Get started by editing <code>app/foo/page.tsx</code>
+        </p>
+        <Link href="/">
+          <span>&lt;-</span> Home
+        </Link>
+      </div>
     </main>
   );
 }

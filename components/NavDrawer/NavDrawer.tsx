@@ -1,6 +1,7 @@
 'use client';
 import { Cross2Icon } from '@radix-ui/react-icons';
-import Link from 'next/link';
+import AnimatedLink from '../AnimatedLink/AnimatedLink';
+// import AnimatedLink from 'next/AnimatedLink';
 
 export function NavDrawer() {
   const closeDrawer = () => {
@@ -20,29 +21,28 @@ export function NavDrawer() {
       </div>
       <ul className="NavDrawerList" style={{ listStyle: 'none' }}>
         <li className="NavDrawerItem">
-          <Link href="/" className="NavDrawerLink">
+          <AnimatedLink href="/">
+             {/* className="NavDrawerLink"> */}
             Home
-          </Link>
+          </AnimatedLink>
         </li>
         <li className="NavDrawerItem">
-          <Link href="/about" className="NavDrawerLink">
+          <AnimatedLink href="/about">
+             {/* className="NavDrawerLink"> */}
             About
-          </Link>
+          </AnimatedLink>
         </li>
         <li className="NavDrawerItem">
-          <Link href="/services" className="NavDrawerLink">
+          <AnimatedLink href="/services">
+             {/* className="NavDrawerLink"> */}
             Services
-          </Link>
+          </AnimatedLink>
         </li>
         <li className="NavDrawerItem">
-          <Link href="/contact" className="NavDrawerLink">
+          <AnimatedLink href="/contact">
+             {/* className="NavDrawerLink"> */}
             Contact
-          </Link>
-        </li>
-        <li className="NavDrawerItem">
-          <Link href="/foo" className="NavDrawerLink">
-            Foo
-          </Link>
+          </AnimatedLink>
         </li>
       </ul>
     </nav>

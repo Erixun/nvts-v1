@@ -92,19 +92,15 @@ body {
 }
 
 body {
-  /* min-height: 100vh; */
   display: flex;
   align-content: center;
   align-items: center;
   flex-direction: column;
   color: rgb(var(--foreground-rgb));
-  /* background-color: var(--bgc-primary); */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+}
+
+#body {
+  margin-right: 0 !important;
 }
 
 a {
@@ -119,7 +115,6 @@ a {
 }
 
 .container {
-  /* max-width: 1440px; */
   max-width: var(--max-width);
   width: 100vw;
   min-height: 100vh;
@@ -132,7 +127,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1rem;
@@ -142,16 +136,12 @@ main {
   position: absolute;
   top: 100%;
   right: 0;
-  /* bottom: 0; */
   width: 100%;
   max-width: 300px;
   background-color: var(--color-page-background);
-  /* background-color: var(--bgc-primary); */
   z-index: 100;
-  /* transform: translateX(-100%); */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
-  /* opacity: 0; */
   border: 1px solid;
   border-radius: 4px;
 }
@@ -167,4 +157,124 @@ body:not(.drawer-open) .NavDrawer {
 
 button {
   cursor: pointer;
+}
+
+/* || VIEW TRANSITIONS */
+/* ::view-transition-old(root) {
+  animation: fade-and-scale-out 0.5s ease-in-out 1 forwards;
+}
+
+::view-transition-new(root) {
+  animation: fade-and-scale-in 1s ease-in-out 1 forwards;
+}
+
+@keyframes fade-and-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-and-scale-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+} */
+main {
+  view-transition-name: fade-in;
+}
+
+::view-transition-old(fade-in) {
+  animation: hide 0.1s ease-in-out 1 forwards;
+}
+
+::view-transition-new(fade-in) {
+  animation: hide 0.4s ease-in-out 1 reverse;
+}
+
+/* .presentation {
+  view-transition-name: slide-right;
+} */
+
+h1 {
+  view-transition-name: slide-right;
+}
+
+::view-transition-old(slide-right) {
+  animation: hide 0.1s ease-in-out 1 forwards;
+}
+
+::view-transition-new(slide-right) {
+  animation: slide-right 1s ease-in-out 1 forwards;
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* .presentation {
+  view-transition-name: page-content;
+}
+
+::view-transition-old(page-content) {
+  animation: hide 100ms ease-in-out 1 forwards;
+}
+
+::view-transition-new(page-content) {
+  animation: slide-up 0.5s ease-in-out 1 forwards;
+} */
+
+/* Second Animation */
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.presentation {
+  view-transition-name: slide-up;
+}
+
+::view-transition-old(slide-up) {
+  animation: hide 0.1s ease-in-out 1 forwards;
+}
+
+::view-transition-new(slide-up) {
+  animation: slide-up 1s ease-in-out 1 forwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

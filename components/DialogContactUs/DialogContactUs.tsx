@@ -5,7 +5,17 @@ import { Cross2Icon } from '@radix-ui/react-icons';
 import './styles.css';
 
 export const DialogContactUs = () => (
-  <Dialog.Root>
+  <Dialog.Root
+    onOpenChange={(open: boolean) => {
+      if (open) {
+        document.body.style.marginRight = '0px !important';
+        // document.documentElement.style.setProperty('overflow', 'hidden');
+      } else {
+        document.body.style.marginRight = '0px !important';
+        // document.documentElement.style.setProperty('overflow', 'auto');
+      }
+    }}
+  >
     <Dialog.Trigger asChild>
       <Button
         radius="full"
@@ -18,7 +28,7 @@ export const DialogContactUs = () => (
     </Dialog.Trigger>
     <Dialog.Portal>
       <Dialog.Overlay className="DialogOverlay" />
-      <Dialog.Content className="DialogContent">
+      <Dialog.Content className="DialogContent" style={{}}>
         <Dialog.Title className="DialogTitle">Contact us</Dialog.Title>
         <Dialog.Description className="DialogDescription">
           You are most welcome to contact us for any inquiries. We&apos;ll get

@@ -1,6 +1,16 @@
+'use client';
+import useAnimatedRouter from '@/hooks/useAnimatedRouter';
 import styles from './Footer.module.css';
+import { useState, useEffect } from 'react';
 
 export function Footer() {
+  const { viewTransitionsStatus } = useAnimatedRouter();
+  const [transitionStatus, setTransitionStatus] = useState('');
+  useEffect(() => {
+    const status = viewTransitionsStatus();
+    setTransitionStatus(status);
+  }, [viewTransitionsStatus]);
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_primary}>
@@ -42,6 +52,7 @@ export function Footer() {
           Nordic Vertitech Solutions AB, Kungsgatan 8, 111 43 Stockholm, Sweden
         </address>
       </div>
+      <div>{transitionStatus}</div>
     </footer>
   );
 }
