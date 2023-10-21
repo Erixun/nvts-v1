@@ -23,7 +23,7 @@ export default function RootLayout({
         <Theme accentColor="indigo" radius="full">
           <div className="container">
             <Header />
-            <div className="content" style={{ position: 'relative' }}>
+            <div className="content" style={{ position: 'relative', flex: 1 }}>
               {children}
             </div>
             <ButtonScrollUp />
