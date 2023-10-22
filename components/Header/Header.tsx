@@ -66,6 +66,7 @@ export function Header() {
         }}
       >
         <button
+          className="btnColorMode"
           onClick={toggleColorMode}
           style={{
             display: 'flex',
@@ -80,6 +81,7 @@ export function Header() {
         </button>
         <DialogContactUs />
         <button
+          className="btnMenu"
           style={{
             display: 'flex',
             cursor: 'pointer',

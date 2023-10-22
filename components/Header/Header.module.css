@@ -8,7 +8,6 @@
   padding-bottom: 0;
 }
 
-
 .header a {
   /* color: #0070f3; */
   text-decoration: none;
@@ -31,4 +30,9 @@
   border-radius: 25px;
   font-size: 14px;
   border: none;
+}
+
+.btnColorMode {
+}
+.btnMenu {
 }
