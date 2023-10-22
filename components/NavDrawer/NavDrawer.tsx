@@ -7,19 +7,19 @@ import { useCallback, useEffect} from 'react';
 export const NavItems = [
   {
     href: '/',
-    label: 'Home',
+    label: 'Welcome',
   },
   {
     href: '/about',
-    label: 'About',
+    label: 'About Us',
   },
   {
     href: '/services',
-    label: 'Services',
+    label: 'Our Services',
   },
   {
     href: '/contact',
-    label: 'Contact',
+    label: 'Contact Info',
   },
 ];
 
