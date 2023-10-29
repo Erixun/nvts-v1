@@ -1,12 +1,11 @@
 'use client';
-import { useSelectedLayoutSegment } from 'next/navigation';
 import styles from './Header.module.css';
-import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { HamburgerMenuIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons';
 import { DialogContactUs } from '../DialogContactUs';
 import { NavDrawer } from '../NavDrawer';
+import { Button } from '@radix-ui/themes';
 
 export function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,9 +25,10 @@ export function Header() {
     }
   }, [isDarkMode]);
 
+  const [hasNavDrawer, setHasNavDrawer] = useState(false);
   const toggleDrawer = (e: any) => {
     e.nativeEvent.stopImmediatePropagation();
-    document.body.classList.toggle('drawer-open');
+    setHasNavDrawer(!hasNavDrawer);
   };
 
   const toggleColorMode = () => {
@@ -60,59 +60,25 @@ export function Header() {
           marginLeft: 'auto',
           justifyContent: 'flex-end',
           alignItems: 'center',
-          gap: 20,
+          gap: 25,
           paddingInlineStart: 30,
+          paddingInlineEnd: 10,
           position: 'relative',
         }}
       >
-        <button
-          className="btnColorMode"
-          onClick={toggleColorMode}
-          style={{
-            display: 'flex',
-            cursor: 'pointer',
-            width: 48,
-            aspectRatio: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
+        <Button variant="ghost" size="4" onClick={toggleColorMode}>
           {isDarkMode ? <SunIcon /> : <MoonIcon />}
-        </button>
+        </Button>
         <DialogContactUs />
-        <button
-          className="btnMenu"
-          style={{
-            display: 'flex',
-            cursor: 'pointer',
-            width: 48,
-            aspectRatio: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-          onClick={toggleDrawer}
-        >
+
+        <Button variant="ghost" size="4" onClick={toggleDrawer}>
           {<HamburgerMenuIcon width={20} height={20} />}
-        </button>
-        <NavDrawer />
+        </Button>
+        {hasNavDrawer && <NavDrawer />}
       </section>
     </header>
   );
 }
-
-const NavItem = ({ name, slug, description }: PageLink) => {
-  const segment = useSelectedLayoutSegment();
-  const isActive = segment === slug;
-  console.log({ segment, slug, isActive });
-  return (
-    <Link
-      href={`/${slug ?? ''}`}
-      // style={isActive ? { textDecoration: 'underline', color: 'red' } : {}}
-    >
-      {name}
-    </Link>
-  );
-};
 
 export type PageLink = {
   name: string;
