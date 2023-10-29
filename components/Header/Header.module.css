@@ -9,18 +9,11 @@
 }
 
 .header a {
-  /* color: #0070f3; */
   text-decoration: none;
 }
 
 .header a:hover {
   text-decoration: underline;
-}
-
-.header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .button {
@@ -30,9 +23,4 @@
   border-radius: 25px;
   font-size: 14px;
   border: none;
-}
-
-.btnColorMode {
-}
-.btnMenu {
 }
