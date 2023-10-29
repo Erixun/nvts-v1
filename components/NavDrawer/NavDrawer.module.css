@@ -1,0 +1,14 @@
+.NavDrawer {
+  position: absolute;
+  display: grid;
+  top: 110%;
+  right: 0;
+  width: 100%;
+  max-width: 230px;
+  background-color: var(--color-page-background);
+  z-index: 100;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+}

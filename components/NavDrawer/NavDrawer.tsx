@@ -2,24 +2,25 @@
 import { Cross2Icon } from '@radix-ui/react-icons';
 import AnimatedLink from '../AnimatedLink/AnimatedLink';
 import { usePathname } from 'next/navigation';
-import { useCallback, useEffect} from 'react';
+import { useCallback, useEffect } from 'react';
+import styles from './NavDrawer.module.css';
 
 export const NavItems = [
   {
     href: '/',
-    label: 'Welcome',
+    label: 'Välkommen',
   },
   {
     href: '/about',
-    label: 'About Us',
+    label: 'Om oss',
   },
   {
     href: '/services',
-    label: 'Our Services',
+    label: 'Våra tjänster',
   },
   {
     href: '/contact',
-    label: 'Contact Info',
+    label: 'Kontaktinfo',
   },
 ];
 
@@ -47,11 +48,10 @@ export function NavDrawer() {
   return (
     <nav
       onClick={(e) => e.nativeEvent.stopImmediatePropagation()}
-      className="NavDrawer"
-      style={{ display: 'grid', paddingBlock: 10, paddingInline: 20 }}
+      className={styles.NavDrawer}
     >
       <div className="NavDrawerHeader">
-        <h2>Pages</h2>
+        <h2>Sidor</h2>
         <button className="IconButton" aria-label="Close" onClick={closeDrawer}>
           <Cross2Icon />
         </button>
