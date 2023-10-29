@@ -46,38 +46,6 @@
   --nvts-green500: #0b2e0b;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-} */
 
 * {
   box-sizing: border-box;
@@ -132,65 +100,13 @@ main {
   padding: 0 1rem;
 }
 
-.NavDrawer {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  max-width: 250px;
-  background-color: var(--color-page-background);
-  z-index: 100;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
-  border: 1px solid;
-  border-radius: 4px;
-}
-body.drawer-open .NavDrawer {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-body:not(.drawer-open) .NavDrawer {
-  opacity: 0;
-  transform: translateX(100%);
-}
 
 button {
   cursor: pointer;
 }
 
 /* || VIEW TRANSITIONS */
-/* ::view-transition-old(root) {
-  animation: fade-and-scale-out 0.5s ease-in-out 1 forwards;
-}
 
-::view-transition-new(root) {
-  animation: fade-and-scale-in 1s ease-in-out 1 forwards;
-}
-
-@keyframes fade-and-scale-in {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes fade-and-scale-out {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0;
-    transform: scale(0);
-  }
-} */
 main {
   view-transition-name: fade-in;
 }
@@ -202,10 +118,6 @@ main {
 ::view-transition-new(fade-in) {
   animation: hide 0.4s ease-in-out 1 reverse;
 }
-
-/* .presentation {
-  view-transition-name: slide-right;
-} */
 
 h1 {
   view-transition-name: slide-right;
@@ -231,17 +143,6 @@ h1 {
   }
 }
 
-/* .presentation {
-  view-transition-name: page-content;
-}
-
-::view-transition-old(page-content) {
-  animation: hide 100ms ease-in-out 1 forwards;
-}
-
-::view-transition-new(page-content) {
-  animation: slide-up 0.5s ease-in-out 1 forwards;
-} */
 
 /* Second Animation */
 
