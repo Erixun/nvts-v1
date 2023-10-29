@@ -52,7 +52,7 @@ export function Footer() {
           Nordic Vertitech Solutions AB, Kungsgatan 8, 111 43 Stockholm, Sweden
         </address>
       </div>
-      <div>{transitionStatus}</div>
+      {/* <div>{transitionStatus}</div> */}
     </footer>
   );
 }
