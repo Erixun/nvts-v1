@@ -16,33 +16,15 @@ export const NavItems = [
   },
   {
     href: '/services',
-    label: 'Våra tjänster',
+    label: 'Tjänster',
   },
   {
     href: '/contact',
-    label: 'Kontaktinfo',
+    label: 'Kontakt',
   },
 ];
 
-export function NavDrawer() {
-  const closeDrawer = () => {
-    document.body.classList.remove('drawer-open');
-  };
-
-  const closeDrawerOnClickOutside = useCallback((event: MouseEvent) => {
-    const isDrawerOpen = document.body.classList.contains('drawer-open');
-
-    if (isDrawerOpen) closeDrawer();
-  }, []);
-
-  useEffect(() => {
-    document.addEventListener('click', closeDrawerOnClickOutside);
-
-    return () => {
-      document.removeEventListener('click', closeDrawerOnClickOutside);
-    };
-  }, [closeDrawerOnClickOutside]);
-
+export function NavDrawer({ onClose: closeDrawer }: { onClose: () => void }) {
   const pathname = usePathname();
 
   return (
@@ -57,7 +39,7 @@ export function NavDrawer() {
         </button>
       </div>
       <ul
-        className="NavDrawerList"
+        className={styles.NavDrawerList}
         style={{ listStyle: 'none', paddingLeft: 15 }}
       >
         {NavItems.map((item) => (

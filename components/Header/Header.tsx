@@ -30,10 +30,10 @@ export function Header() {
     e.nativeEvent.stopImmediatePropagation();
     setHasNavDrawer(!hasNavDrawer);
   };
+  const closeDrawer = () => setHasNavDrawer(false);
 
-  const toggleColorMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  const toggleColorMode = () => setIsDarkMode(!isDarkMode);
+
   return (
     <header className={styles.header} style={{ position: 'relative' }}>
       <div
@@ -74,7 +74,7 @@ export function Header() {
         <Button variant="ghost" size="4" onClick={toggleDrawer}>
           {<HamburgerMenuIcon width={20} height={20} />}
         </Button>
-        {hasNavDrawer && <NavDrawer />}
+        {hasNavDrawer && <NavDrawer onClose={closeDrawer} />}
       </section>
     </header>
   );

@@ -23,20 +23,20 @@ export const DialogContactUs = () => (
         size={'3'}
         style={{ cursor: 'pointer' }}
       >
-        Contact us
+        Kontakta oss
       </Button>
     </Dialog.Trigger>
     <Dialog.Portal>
       <Dialog.Overlay className="DialogOverlay" />
       <Dialog.Content className="DialogContent" style={{}}>
-        <Dialog.Title className="DialogTitle">Contact us</Dialog.Title>
+        <Dialog.Title className="DialogTitle">Kontakta oss</Dialog.Title>
         <Dialog.Description className="DialogDescription">
-          You are most welcome to contact us for any inquiries. We&apos;ll get
-          back to you as soon as possible.
+          Välkommen att kontakta oss för alla typer av förfrågningar. Vi
+          återkommer så snart som möjligt.
         </Dialog.Description>
         <fieldset className="Fieldset">
           <label className="Label" htmlFor="name">
-            Name
+            Namn
           </label>
           <input className="Input" id="name" placeholder="Your name" />
         </fieldset>
@@ -48,13 +48,13 @@ export const DialogContactUs = () => (
         </fieldset>
         <fieldset className="Fieldset">
           <label className="Label" htmlFor="subject">
-            Subject
+            Rubrik
           </label>
           <input className="Input" id="subject" placeholder="Inquiry" />
         </fieldset>
         <fieldset className="Fieldset" style={{ alignItems: 'flex-start' }}>
           <label className="Label" htmlFor="username">
-            Message
+            Meddelande
           </label>
           <textarea
             className="Input"
@@ -69,7 +69,7 @@ export const DialogContactUs = () => (
           style={{ display: 'flex', marginTop: 25, justifyContent: 'flex-end' }}
         >
           <Dialog.Close asChild>
-            <button className="Button indigo">Send</button>
+            <button className="Button indigo">Skicka</button>
           </Dialog.Close>
         </div>
         <Dialog.Close asChild>
