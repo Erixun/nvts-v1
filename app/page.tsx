@@ -12,7 +12,7 @@ export default function Home() {
           gap: 15,
         }}
       >
-        <h1>Welcome</h1>
+        <h1>Välkommen</h1>
         <div className="presentation">
           <p style={{ textAlign: 'center' }}>
             This is the home of <em>Nordic Vertitech Solutions</em>.
