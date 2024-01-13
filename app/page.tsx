@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <main className={styles.main} style={{ gap: 60, padding: '6rem' }}>
+    <main className={styles.main} style={{ gap: 60, padding: '3rem' }}>
       <div
         className="intro"
         style={{
@@ -12,6 +12,7 @@ export default function Home() {
           gap: 15,
         }}
       >
+        <em>Under konstruktion...</em>
         <h1>Välkommen</h1>
         <div className="presentation">
           <p>

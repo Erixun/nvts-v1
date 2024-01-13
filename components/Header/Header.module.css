@@ -6,6 +6,9 @@
   align-items: center;
   padding: 20px;
   padding-bottom: 0;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-9)
 }
 
 .header a {
