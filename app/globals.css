@@ -158,6 +158,10 @@ h1 {
 
 .presentation {
   view-transition-name: slide-up;
+
+  & p {
+    margin-bottom: 1rem;
+  }
 }
 
 ::view-transition-old(slide-up) {

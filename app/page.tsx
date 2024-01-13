@@ -14,107 +14,45 @@ export default function Home() {
       >
         <h1>Välkommen</h1>
         <div className="presentation">
-          <p style={{ textAlign: 'center' }}>
-            This is the home of <em>Nordic Vertitech Solutions</em>.
-          </p>
           <p>
-            We provide services and installation of elevators, escalators and
-            other vertical transportation systems.
+            Detta är <em>Nordic Vertitech Solutions</em>. Vi är ett modernt
+            företag specialiserat på hissmontering och installation, samt
+            ombyggnad av befintliga hissar i lägenhetsbyggnader. Vårt mål är att
+            erbjuda högkvalitativa tjänster till våra kunder, säkerställa att
+            deras byggnader är väl utrustade och att vi lever upp till alla
+            relevanta lagar och regler.
           </p>
+
           <p>
-            {/* Write a brief and compelling tagline or mission statement: */}
-            <strong>
-              Our mission is to provide the best service possible for all your
-              vertical transportation needs.
-            </strong>
+            Vi har erfarenhet av att arbeta med både små och stora kommersiella
+            byggnader, och vi är bekanta med de tekniska och affärsmässiga
+            utmaningarna som dessa projekt innebär. Med vår expertis och passion
+            kan vi se till att din byggnad är väl utrustad och att det finns en
+            hiss där det behövs.
           </p>
-        </div>
-      </div>
-      <div className="content">
-        <h2>Aktuellt</h2>
-        <div
-          className="cardcontainer"
-          style={{
-            width: '100%',
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: 30,
-            paddingBlock: 30,
-            justifyContent: 'space-around',
-          }}
-        >
-          <div className="card" style={{ width: 200 }}>
-            <div
-              className="cardimg"
-              style={{
-                display: 'flex',
-                width: '100%',
-                borderTopLeftRadius: 15,
-                borderTopRightRadius: 15,
-                aspectRatio: 1,
-                backgroundColor: '#b4d4ff',
-              }}
-            >
-              <div style={{ margin: 'auto' }}>img</div>
-            </div>
-            <div className="cardcontent" style={{ padding: 10 }}>
-              <h3>News</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem doloremque officiis quas nostrum, amet sint minus
-                quam doloribus unde excepturi.
-              </p>
-              <div style={{ marginTop: 10, textAlign: 'right' }}>
-                Read more -&gt;
-              </div>
-            </div>
-          </div>
-          <div className="card" style={{ width: 200 }}>
-            <div
-              className="cardimg"
-              style={{
-                display: 'flex',
-                width: '100%',
-                borderTopLeftRadius: 15,
-                borderTopRightRadius: 15,
-                aspectRatio: 1,
-                backgroundColor: '#b4d4ff',
-              }}
-            >
-              <div style={{ margin: 'auto' }}>img</div>
-            </div>
-            <div className="cardcontent" style={{ padding: 10 }}>
-              <h3>News</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem doloremque officiis quas nostrum, amet sint minus
-                quam doloribus unde excepturi.
-              </p>
-            </div>
-          </div>
-          <div className="card" style={{ width: 200 }}>
-            <div
-              className="cardimg"
-              style={{
-                display: 'flex',
-                width: '100%',
-                borderTopLeftRadius: 15,
-                borderTopRightRadius: 15,
-                aspectRatio: 1,
-                backgroundColor: '#b4d4ff',
-              }}
-            >
-              <div style={{ margin: 'auto' }}>img</div>
-            </div>
-            <div className="cardcontent" style={{ padding: 10 }}>
-              <h3>News</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem doloremque officiis quas nostrum, amet sint minus
-                quam doloribus unde excepturi.
-              </p>
-            </div>
-          </div>
+
+          <p>
+            Vi tar även hand om underhåll och reparation av hissar för att
+            säkerställa att de fungerar effektivt och säkert. Detta innebär
+            regelbundna kontroller och reparationer för att förhindra oväntade
+            driftstopp och garantera att hissen alltid är klar att använda.
+          </p>
+
+          <p>
+            Vi strävar efter att erbjuda en lösning från början till slut, från
+            design till daglig drift, och vi är alltid tillgängliga för att
+            svara på eventuella frågor eller problem. Vårt team består av
+            utbildade och licensierade hissinstallatörer med mångårig kompetens,
+            vilket gör oss väl rustade för att hantera alla typer av
+            hissprojekt.
+          </p>
+
+          <p>
+            Vi ser fram emot att samarbeta med dig och bidra till att göra dina
+            byggnader säkrare och mer effektiva. Kontakta oss idag för ett
+            samtal om hur vi kan hjälpa till att förbättra din byggnad genom
+            installation eller ombyggnad av hiss.
+          </p>
         </div>
       </div>
     </main>
